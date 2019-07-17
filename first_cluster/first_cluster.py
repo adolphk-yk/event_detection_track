@@ -1,4 +1,4 @@
-from data_prepare import DataPrepare
+from first_cluster.data_prepare import DataPrepare
 from itertools import combinations
 import networkx as nx
 import sys

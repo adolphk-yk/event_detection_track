@@ -50,10 +50,10 @@ def build_sample(pick_event_news_list):
     print('have %d postive sample data.' % len(pos_sample_set))
     print('have %d negtive sample data.' % len(neg_sample_set))
     # save as txt file
-    with open('./temp/second_cluster/positive.txt', 'w', encoding='utf-8') as fin:
+    with open('../temp/second_cluster/positive.txt', 'w', encoding='utf-8') as fin:
         for single in pos_sample_set:
             fin.write(' '.join(single) + '\n')
-    with open('./temp/second_cluster/negative.txt', 'w', encoding='utf-8') as fin:
+    with open('../temp/second_cluster/negative.txt', 'w', encoding='utf-8') as fin:
         for single in neg_sample_set:
             fin.write(' '.join(single) + '\n')
 
@@ -62,3 +62,6 @@ def run_build_sample():
     data_prepare = DataPrepare()
     pick_event_news_list = filter_event(data_prepare)
     build_sample(pick_event_news_list)
+
+if __name__ == '__main__':
+    run_build_sample()

@@ -16,7 +16,7 @@ def load_data(pos_data_path='../temp/second_cluster/positive.txt', neg_data_path
     # read positive and negative sample file
     pos_data_all = []
     neg_data_all = []
-    news_path = '../data/news.pkl'
+    news_path = '../temp/news.pkl'
     with open(pos_data_path, 'r', encoding='utf-8') as fin:
         for single in fin:
             pos_data_all.append(single.strip('\n').split(' '))
