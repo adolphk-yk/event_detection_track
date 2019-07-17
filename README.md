@@ -3,7 +3,12 @@ Detect and track event from news
 
 程序分为三部分：预处理/第一层聚类/第二层聚类；
 
-在运行任何程序之前请务必保证运行过根目录下的预处理程序(process.py)；
+在运行任何程序之前请务必保证运行过根目录下的预处理程序(process.py):
+```bash
+    #when you use this code at the first time, insure to run process.py
+    python process.py
+```
+预处理程序会对数据进行清洗封装，产生event_news.pkl & news.pkl，存放在./temp目录下
 
 其中第二层聚类需要用到第一层的结果.
 
